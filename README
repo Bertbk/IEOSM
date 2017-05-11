@@ -1,0 +1,19 @@
+Matlab code associated to the article
+"Integral equation based optimized Schwarz method for electromagnetics"
+X. Claeys, B. Thierry and F. Collino
+======================================
+How to use it ?
+- Add to the Matlab path the folder and the subfolders.
+- Modify and launch one of the three files :
+   *************
+     IEOSM.m
+- compute and display the convergence factor rho for certain parameter (k,r,alpha).--- This script accepts array of "k" to compute multiple rho(k)
+   *************
+     IEOSM_eig.m
+- compute and display the eigenvalues of the iteration operator for different parameters (k,alpha,r).
+- The script also saves the data as .txt files
+   *************
+     IEOSM_max_rho.m
+- compute and display max_{n}(rho(n,k)) for different value of k.
+- The script then do a linear regression to find the coefficients C and a such that :
+  max_n{rho(k,n)} = 1 - C / k^a
